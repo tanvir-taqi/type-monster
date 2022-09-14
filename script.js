@@ -113,11 +113,12 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "flex";
-      display.classList.remove("inactive");
+      countdownOverlay.style.display = "none";
+      display.classList.add("inactive");
 
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+      
     }
     count--;
   }, 1000);

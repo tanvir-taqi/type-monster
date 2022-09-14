@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("./bg.png");
+    background-size: cover;
+    background-position: left top;
+    font-family: "Zilla Slab", serif;
+  }
+
+  section{
+    margin: 20px 20px;
+  }
+
+  .blogs{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .blog-card{
+   
+    background: #9dffad1a;
+    margin: 50px 30px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #9dffad;
+  }
+  .blog-card h2{
+    margin-bottom: 20px;
+  }
+  .blog-card p{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  @media screen and (max-width:576px) {
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }

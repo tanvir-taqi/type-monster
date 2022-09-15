@@ -44,10 +44,10 @@ const typeController = (e) => {
 
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
-    console.log(newLetter);
+   
   } else {
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
-    console.log(newLetter);
+   
     errorCount++;
   }
 
